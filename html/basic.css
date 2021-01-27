@@ -1,0 +1,26 @@
+body {
+    font-family: helvetica, arial, sans-serif;
+    margin: 2em;
+  }
+  
+  h1 {
+    font-style: italic;
+    color: #373fff;
+  }
+  
+  a {
+    text-decoration: none;
+    color: red;
+  }
+  
+  table {
+    border: 1px solid;
+    border-spacing: 0px;
+    
+  }
+  
+  tr, td, th {
+    padding: 8px;
+    border: 1px solid #ddd;
+    
+  }
