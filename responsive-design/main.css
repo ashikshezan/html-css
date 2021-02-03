@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Roboto:wght@300;400&display=swap');
+
+:root {
+    --clr-100: #fff;
+    --clr-300: #f3eed9;
+    --clr-600: #824936;
+    --clr-900: #222c2a;
+
+    --ff-primary: Roboto ,sans-serif;
+    --ff-heading: 'Playfair Display', sarif;
+}
+
+* {
+ box-sizing: border-box;
+ margin: 0px;
+ padding: 0px;
+}
+
+body {
+    font-family: var(--ff-primary);
+    font-weight: 400;
+    line-height: 1.6;
+    font-size: 20px;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--ff-heading);
+    line-height: 1;
+    margin-bottom: 2rem;
+}
+
+h2,
+p {
+    margin-bottom: 1rem;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+.container {
+    /* margin-inline only add space in left and right */
+    margin-inline: auto;
+    width: min(90%, 70rem); 
+}
+
+.text-center {
+    text-align: center;
+}
+
+.container-sm {
+    max-width: 25rem;
+}
+
+.bg-light {
+    background-color: var(--clr-300);
+    color: var(--clr-600);
+}
+.bg-white {
+    background-color: var(--clr-100);
+    color: var(--clr-900);
+}
+.bg-dark {
+    background-color: var(--clr-900);
+    color: var(--clr-100);
+}
+.bg-brown {
+    background-color: var(--clr-600);
+    color: var(--clr-100);
+}
+
+header,
+section {
+    padding: 4rem 0;
+}
+
+@media (min-width: 40em) {
+    .flex {
+        flex-direction: row;
+    }
+    .flex > * {
+        flex-basis: 100%;
+    }
+
+    /* '+' is css adjacent sibling selector */
+    .flex > * + * {
+        margin-left: 2rem;
+    }
+
+    header,
+    section {
+    padding: 8rem 0;
+    }
+}

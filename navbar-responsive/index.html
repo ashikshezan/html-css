@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Navbar</title>
+</head>
+
+<body>
+    <header class="navbar">
+        <h1>Liverpool</h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="">Home</a></li>
+                <li><a href="">Team</a></li>
+                <li><a href="">Players</a></li>
+                <li><a href="">Matches</a></li>
+            </ul>
+        </nav>
+        <div class="ham">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </header>
+    <script>
+        const nav = document.getElementsByClassName('ham')[0]
+        const links = document.getElementsByTagName('nav')[0]
+        console.log(links);
+        nav.addEventListener('click', () => {
+            links.classList.toggle('active')
+        })
+    </script>
+</body>
+
+</html>
